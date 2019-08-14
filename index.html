@@ -1,37 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DILLY DILLY</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <style>
-        body {
-          background-color: #EB35A3;
-        }
-        .main {
-          display: block;
-          margin: 0 auto;
-          max-width: 1280px;
-        }
-
-        .img {
-          display: block;
-          width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dilly Dilly</title>
+  <link rel="icon" href="./images/logo_pink_small.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="MyFontsWebfontsKit.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="main">
-      <img class="img" src="/desktop0725.png" alt="">
-        <!-- <img class="img" src="/0002.jpg" alt="">
-        <img class="img" src="/0003.jpg" alt="">
-        <img class="img" src="/0004.jpg" alt="">
-        <img class="img" src="/0005.jpg" alt="">
-        <img class="img" src="/0006.jpg" alt=""> -->
+<nav class="navbar" id="navbar">
+  <span class="menu-area" id="menu-area">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </span>
+  <div class="inner">
+    <div class="logo" id="nav-logo"></div>
+    <ul class="gnb-menu" id="gnb-menu">
+      <li><a href="#about">about us</a></li>
+      <li><a href="#our">our business</a></li>
+      <li><a href="#collection">collection</a></li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="cover-section">
+    <div class="video-area">
+      <video autoplay loop muted playsinline class="video-background" poster="images/bg_poster.jpg">
+        <source src="images/bg_video_18s.mp4" type="video/mp4">
+      </video>
     </div>
+    <div class="txt-area">
+      <h1 class="section-title">Find my<br>real beauty</h1>
+      <p class="section-desc">Show your real own beauty inside</p>
+<!--    <button class="section-btn">Shop now</button>-->
+    </div>
+  </div>
+
+  <div class="about-section" id="about">
+    <div class="inner">
+      <div class="img"></div>
+      <h2>Get to <span>Know Us</span></h2>
+      <div class="about-txt-area">
+        <p class="txt1">The first K-beauty<br>cosmetic brand<br>specialized for the<br>Middle East</p>
+        <p class="txt2">DillyDilly is the first cosmetic brand from South Korea specialized for the Middle East market based on K=beauty cosmetic technology and trend. We are here to enhance women’s beauty in the region-inside and out.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-section" id="our">
+    <div class="txt-area">
+      <div class="inner">
+        <div class="txt-box">
+          <p class="txt1">You are wonderful <i class="mobile-enter"></i>and <i class="tablet-enter"></i>beautiful as <i class="mobile-enter"></i>you are now</p>
+          <p class="txt2">We believe that any women in the world can empower the world and we are here to enhance their confidence and natural beauty to change the world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-area">
+      <div class="inner">
+        <h2>Main Products</h2>
+        <ul class="product-list">
+          <li class="product-item">
+            <img src="images/img_product1.png" alt="complexion">
+            <span class="name">Complexion</span>
+          </li>
+          <li class="product-item">
+            <img src="images/img_product2.png" alt="eye and lips">
+            <span class="name">Eye & Lips</span>
+          </li>
+          <li class="product-item">
+            <img src="images/img_product3.png" alt="tools">
+            <span class="name">Tools</span>
+          </li>
+        </ul>
+        <p class="list-txt">We believe that every color has a meaning and personality. <i class="tablet-enter"></i>We are aim to delivery those diversity and personality through <i class="tablet-enter"></i>our product to enhance our <u>customer’s real beauty.</u></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection-section" id="collection">
+    <div class="inner">
+      <h2>Coming Soon!</h2>
+      <div class="gallery-area type">
+        <ul class="soon-gallery">
+          <li class="soon-item"><img src="images/img_coming_soon1.png" alt=""></li>
+          <li class="soon-item"><img src="images/img_coming_soon2.png" alt=""></li>
+          <li class="soon-item"><img src="images/img_coming_soon3.png" alt=""></li>
+        </ul>
+      </div>
+
+      <p class="follow-insta">Get Featured on Instagram <b>#DillyDilly</b></p>
+      <div class="gallery-area">
+        <ul class="insta-gallery" id="insta-gallery">
+          <li class="insta-item"><img src="images/img_insta1.png" alt=""></li>
+          <li class="insta-item"><img src="images/img_insta2.png" alt=""></li>
+          <li class="insta-item"><img src="images/img_insta3.png" alt=""></li>
+          <li class="insta-item"><img src="images/img_insta4.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section" id="contact">
+    <div class="inner">
+      <h2>Contact Us</h2>
+      <a href="mailto:info@dillydily.ae" class="email">info@dillydily.ae</a>
+      <p class="txt">Dubai : PO Box 390667, Dubai, UAE</p>
+      <p class="txt">Korea : 103 Achasan-ro, Sengdonggu, Seoul , South Korea</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="inner">
+    <div class="logo" id="footer-logo"></div>
+    <div>
+      <ul class="sitemap">
+        <li><a class="link" href="#about">about us</a></li>
+        <li><a class="link" href="#business">our business</a></li>
+        <li><a class="link" href="#collection">collection</a></li>
+        <li><a class="link" href="#contact">contact us</a></li>
+      </ul>
+      <p class="copyright">Copyright (C) 2019, DillyDilly</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script>
+  $('#nav-logo, #footer-logo').click(function(){
+      $('html, body').animate( { scrollTop : 0 }, 400 );
+  });
+
+  $('#menu-area').click(function(){
+      $('#navbar').toggleClass('is-active');
+  });
+
+  $('#gnb-menu').click(function(){
+      $('#navbar').removeClass('is-active');
+  });
+
+  $(window).scroll(function(){
+      if ($(window).scrollTop()>80) {
+          $( 'nav' ).addClass('is-scroll');
+      } else {
+          $('nav').removeClass('is-scroll');
+      }
+  });
+</script>
 </body>
 </html>
