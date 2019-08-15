@@ -9,11 +9,12 @@
   <link rel="icon" href="./images/logo_pink_small.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="MyFontsWebfontsKit.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    }
-  </style>
+
+  <meta content="Dilly Dilly" name="title">
+  <meta content="DillyDilly is the first cosmetic brand from South Korea specialized for the Middle East market." name="description">
+  <meta content="Dilly Dilly" property="og:title">
+  <meta content="DillyDilly is the first cosmetic brand from South Korea specialized for the Middle East market." property="og:description">
+  <meta content="http://dillydilly.ae/og.jpg" property="og:image">
 </head>
 <body>
 <nav class="navbar" id="navbar">
@@ -117,7 +118,7 @@
     <div class="inner">
       <h2>Contact Us</h2>
       <a href="mailto:info@dillydily.ae" class="email">info@dillydily.ae</a>
-      <p class="txt">Dubai : PO Box 390667, Dubai, UAE</p>
+      <p class="txt">Dubai : Logistic City, PO Box 390667, Dubai, UAE</p>
       <p class="txt">Korea : 103 Achasan-ro, Sengdonggu, Seoul , South Korea</p>
     </div>
   </div>
@@ -150,6 +151,22 @@
 
   $('#gnb-menu').click(function(){
       $('#navbar').removeClass('is-active');
+  });
+
+  function checkRatio(){
+    var ratio = innerWidth/innerHeight;
+
+    if (ratio > 1.787){
+        $('.cover-section video').addClass('wide-width');
+    }
+    else {
+        $('.cover-section video').removeClass('wide-width');
+    }
+  }
+
+  checkRatio();
+  $(window).resize(function(){
+      checkRatio();
   });
 
   $(window).scroll(function(){

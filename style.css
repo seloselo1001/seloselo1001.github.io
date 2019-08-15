@@ -238,11 +238,9 @@ button:disabled {
   min-height: 100%;
   transform: translateX(-50%);
 }
-@media (min-width: 1440px) {
-  .cover-section .video-area video {
-    width: 100%;
-    height: auto;
-  }
+.cover-section .video-area video.wide-width {
+  width: 100%;
+  height: auto;
 }
 .cover-section .txt-area {
   position: absolute;
