@@ -303,7 +303,6 @@ button {
         line-height: 46px; } }
   .about-section .txt2 {
     margin-top: 19px;
-    font-family: 'Helvetica Neue';
     font-size: 14px;
     line-height: 22px; }
     @media (min-width: 768px) {
