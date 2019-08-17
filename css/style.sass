@@ -21,6 +21,7 @@ body
   margin: 0
   font-family: $font-med
   font-size: 14px
+  overflow-x: hidden
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
@@ -576,6 +577,8 @@ button
       left: auto
       font-size: 36px
       line-height: 90px
+    @include size-pc
+      top: 90px
 
   .follow-insta
     font-size: 15px
@@ -592,18 +595,23 @@ button
 
     &.type
       padding-top: 90px
-      padding-left: 58px
+      ul
+        padding-left: 58px
+        height: 100%
       img
         width: auto
         height: 369px
 
     @include size-tablet
       &.type
-        padding: 224px 0 106px
+        padding-top: 0
+        ul
+          padding: 224px 0 106px
 
   .soon-gallery
     display: flex
     height: 369px
+    overflow-y: hidden
     @include size-pc
       justify-content: flex-end
 
@@ -623,7 +631,6 @@ button
     height: 330px
     &:not(:first-child)
       margin-left: 14px
-
 
 // contact
 .contact-section

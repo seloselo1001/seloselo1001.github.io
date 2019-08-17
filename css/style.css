@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Futura-Med";
   font-size: 14px;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   body *, body *::before, body *::after {
@@ -548,6 +549,9 @@ button {
         left: auto;
         font-size: 36px;
         line-height: 90px; } }
+    @media (min-width: 1440px) {
+      .collection-section h2 {
+        top: 90px; } }
   .collection-section .follow-insta {
     font-size: 15px;
     line-height: 22px; }
@@ -561,17 +565,22 @@ button {
     -webkit-overflow-scrolling: touch;
     z-index: 1; }
     .collection-section .gallery-area.type {
-      padding-top: 90px;
-      padding-left: 58px; }
+      padding-top: 90px; }
+      .collection-section .gallery-area.type ul {
+        padding-left: 58px;
+        height: 100%; }
       .collection-section .gallery-area.type img {
         width: auto;
         height: 369px; }
     @media (min-width: 768px) {
       .collection-section .gallery-area.type {
-        padding: 224px 0 106px; } }
+        padding-top: 0; }
+        .collection-section .gallery-area.type ul {
+          padding: 224px 0 106px; } }
   .collection-section .soon-gallery {
     display: flex;
-    height: 369px; }
+    height: 369px;
+    overflow-y: hidden; }
     @media (min-width: 1440px) {
       .collection-section .soon-gallery {
         justify-content: flex-end; } }
