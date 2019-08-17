@@ -96,7 +96,7 @@ button
         margin: 0
         width: 96px
         height: 30px
-        background-image: url('./images/logo_pink.svg')
+        background-image: url('../images/logo_pink.svg')
       ul
         height: 74px
       li
@@ -116,7 +116,7 @@ button
         transform: translateY(-7px) rotate(45deg)
 
     .logo
-      background-image: url('./images/logo_black.svg')
+      background-image: url('../images/logo_black.svg')
 
     .gnb-menu
       position: fixed
@@ -165,7 +165,7 @@ button
     width: 116px
     height: 36px
     background:
-      image: url('./images/logo_white_small.svg')
+      image: url('../images/logo_white_small.svg')
       repeat: no-repeat
       size: contain
       position: center
@@ -277,7 +277,7 @@ button
   .img
     height: 325px
     background:
-      image: url('./images/bg_section1.png')
+      image: url('../images/bg_section1.png')
       repeat: no-repeat
       position: center
       size: cover
@@ -356,19 +356,42 @@ button
 .our-section
   .txt-area
     position: relative
-    padding: 78px 45px 39px 38px
     background-color: #F2C94C
     color: #fff
     overflow: hidden
+
+  .txt-inner
+    padding: 75px 45px 39px 38px
+    overflow: hidden
     @include size-tablet
-      padding: 82px 115px 43px 0
+      display: flex
+      justify-content: space-between
+      align-content: center
+      padding: 82px 115px 43px 126px
+    @media (min-width: 768px) and (max-width: 960px)
+      padding-left: 5em
+      paddring-right: 5em
     @include size-pc
-      padding: 141px 57px 93px 0
+      padding: 141px 57px 93px 212px
+
+  .logo
+    position: absolute
+    top: 32px
+    right: 30px
+    display: block
+    width: 69px
+    @include size-tablet
+      position: relative
+      top: auto
+      right: auto
+      margin-right: 1em
+      width: 203px
+    @include size-pc
+      width: 263px
 
   .txt-box
     position: relative
     @include size-tablet
-      float: right
       margin: 0
       width: 420px
     @include size-pc
@@ -380,6 +403,11 @@ button
     font-size: 22px
     line-height: 32px
     text-transform: uppercase
+    i
+      display: block
+      @include size-tablet
+        display: none
+
     &::before,
     &::after
       content: ''
@@ -388,7 +416,7 @@ button
       width: 29px
       height: 20px
       background:
-        image: url('./images/img_quotation.svg')
+        image: url('../images/img_quotation.svg')
         repeat: no-repeat
         size: contain
         position: center
@@ -406,17 +434,16 @@ button
       @include size-pc
         right: 40px
 
-
     @include size-tablet
       font-size: 30px
       line-height: 44px
+
     @include size-pc
       font-size: 38px
       line-height: 50px
 
   .txt2
     margin-top: 12px
-    font-family: $font-bol
     font-size: 18px
     line-height: 26px
     @include size-tablet
@@ -562,31 +589,6 @@ button
     overflow: auto
     -webkit-overflow-scrolling: touch
     z-index: 1
-    //&::before,
-    //&::after
-    //  content: ''
-    //  position: absolute
-    //  top: 50%
-    //  display: block
-    //  margin-top: -21.5px
-    //  width: 20px
-    //  height: 43px
-    //  background:
-    //    image: url('./images/arrow.svg')
-    //    repeat: no-repeat
-    //    size: auto 100%
-    //    position: center
-    //  @include size-pc
-    //    display: none
-    //&::before
-    //  left: 16px
-    //  @include size-tablet
-    //    left: 40px
-    //&::after
-    //  right: 16px
-    //  transform: rotate(180deg)
-    //  @include size-tablet
-    //    right: 40px
 
     &.type
       padding-top: 90px
@@ -612,6 +614,8 @@ button
   .insta-gallery
     display: flex
     margin-top: 32px
+    min-height: 330px
+    overflow-y: hidden
 
   .insta-item
     flex-shrink: 0
@@ -677,7 +681,7 @@ footer
     width: 50px
     height: 41px
     background:
-      image: url('./images/logo_black_small.svg')
+      image: url('../images/logo_black_small.svg')
       repeat: no-repeat
       size: contain
       position: center
