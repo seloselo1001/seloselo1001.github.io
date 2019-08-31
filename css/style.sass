@@ -367,30 +367,36 @@ button
       display: flex
       justify-content: space-between
       align-content: center
-      padding: 82px 115px 43px 126px
+      padding: 80px
     @media (min-width: 768px) and (max-width: 960px)
       padding-left: 5em
       paddring-right: 5em
     @include size-pc
-      padding: 141px 57px 93px 212px
+      padding: 140px 60px
 
-  .logo
-    position: absolute
-    top: 32px
-    right: 30px
-    display: block
-    width: 69px
-    @include size-tablet
-      position: relative
-      top: auto
-      right: auto
-      margin-right: 1em
-      width: 203px
-    @include size-pc
-      width: 263px
+  .img-box
+    display: flex
+    flex: 1
+
+    .logo
+      position: absolute
+      top: 32px
+      right: 30px
+      display: block
+      margin: auto
+      width: 69px
+      @include size-tablet
+        position: relative
+        top: auto
+        right: auto
+        //margin-right: 1em
+        width: 203px
+      @include size-pc
+        width: 263px
 
   .txt-box
     position: relative
+    flex: 1
     @include size-tablet
       margin: 0
       width: 420px
@@ -399,6 +405,7 @@ button
 
   .txt1
     position: relative
+    display: inline
     font-family: $font-bol
     font-size: 22px
     line-height: 32px
@@ -425,14 +432,12 @@ button
       left: -10px
     &::after
       bottom: 10px
-      left: 190px
+      left: 162px
       transform: rotate(180deg)
       @include size-tablet
-        bottom: 30px
+        bottom: 20px
         left: auto
         right: -40px
-      @include size-pc
-        right: 40px
 
     @include size-tablet
       font-size: 30px
